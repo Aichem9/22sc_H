@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # GitHub file URL
-GITHUB_FILE_URL = "https://raw.githubusercontent.com/username/repository/main/파일이름.xlsx"
+GITHUB_FILE_URL = "https://raw.githubusercontent.com/Aichem9/repository/22sc_H/main/22scapp.xlsx"
 
 @st.cache
 def load_data():
