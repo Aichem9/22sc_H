@@ -1,9 +1,16 @@
 import streamlit as st
 import pandas as pd
 
+# GitHub file URL
+GITHUB_FILE_URL = "https://raw.githubusercontent.com/username/repository/main/파일이름.xlsx"
+
+@st.cache
+def load_data():
+    """Load data from GitHub URL."""
+    return pd.read_excel(GITHUB_FILE_URL, sheet_name='고등_현장적용')
+
 # Load data
-file_path = '22scapp.xlsx'
-sheet_data = pd.read_excel(file_path, sheet_name='고등_현장적용')
+sheet_data = load_data()
 
 # Title
 st.title("과학실험 기구 점검 앱")
