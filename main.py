@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load data
-file_path = '2022 개정 교구 및 기자재 현장 적용 사례_app개발 샘플 (1).xlsx'
+file_path = '22scapp.xlsx'
 sheet_data = pd.read_excel(file_path, sheet_name='고등_현장적용')
 
 # Title
